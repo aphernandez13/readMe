@@ -1,7 +1,7 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
 const util = require("util");
-const generateMarkdown = require("./util/generateMarkdown");
+const generateMarkdown = require("./utils/generateMarkdown");
 
 const writeFileAsync = util.promisify(fs.writeFile);
 
@@ -9,19 +9,19 @@ function promptUser() {
   return inquirer.prompt([
     {
       // array of questions for user
-      message: "What is the name of your project?",
+      message: "State the name of this project",
       name: "title",
     },
     {
-      message: "Please enter a description of the project.",
+      message: "Briefly describe this project.",
       name: "description",
     },
     {
-      message: "Please enter instructions for installation.",
+      message: "What are the instructions for installing this project?",
       name: "installation",
     },
     {
-      message: "Please enter a description of the usage of this project.",
+      message: "Describe the usage of this project.",
       name: "usage",
     },
     {
@@ -31,7 +31,7 @@ function promptUser() {
       choices: ["MIT", "Apache", "GPL"],
     },
     {
-      message: "Please describe how someone can contribute to this project.",
+      message: " how someone can contribute to this project?",
       name: "contribution",
     },
     {
@@ -49,11 +49,14 @@ async function init() {
   try {
     const answers = await promptUser();
     const ReadMe = generateMarkdown(answers);
-    await writeFileAsync("readmeStorage/readme.md", ReadMe);
-    console.log("Successfully wrote to README.md");
+    await writeFileAsync("readmeExample/readme.md", ReadMe);
+    console.log("Success in writing README.md");
   } catch (err) {
     console.log(err);
   }
 }
 
 init();
+
+
+//have to resolve issue
