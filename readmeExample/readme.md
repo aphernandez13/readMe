@@ -1,6 +1,6 @@
-# readme example
-## this is an example of a readme creator test 
-![License](https://img.shields.io/badge/License-MIT-blue.svg "License Badge")
+# read me example
+## the project is used to create readme files for certain projects 
+![License](https://img.shields.io/badge/License--blue.svg "License Badge")
 # Table of Contents :
       
 - [Installation](#installation)
@@ -8,11 +8,11 @@
 - [Test](#tests)
 - [Questions](#questions)
 ## Installation:
-the instructions are pretty easy to install. 
+instructions are very easy 
 ## Usage:
-very good 
+usage for this project is good because almost everyone includes a readme on their project 
 ## Contributing:
-anyone can contribute to this project.   
+any one can contribute to this project just get ahold of me   
 ## Questions
-If you have any questions, please feel free to email me at lskjdsk or take a look at my github page: https://github.com/lskjsla 
+If you have any questions, please feel free to email me at alfredo@gmail or take a look at my github page: https://github.com/alfredo@github 
  
